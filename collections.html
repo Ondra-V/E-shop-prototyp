@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&f[]=bebas-neue@400&f[]=supreme@400&f[]=bespoke-stencil@700&display=swap"
+                    rel="stylesheet">
+          <link rel="icon" type="img/png" href="logo-uvod.png">
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="collections.css">
+          <title>BRAND</title>
+          
+</head>
+
+
+<body>
+          <section class="landing">
+                    <section class="row">
+                              <a href="landing.html">HOME</a>
+                              <a href="brand.html">BRAND</a>
+                              <img src="iron_youth_unite_transparent_500x500.png" alt="">
+                              <a href="">FAME</a>
+                              <a href="bag.html">BAG 00</a>
+                    </section>
+                    <div class="burger-icon" id="burgerIcon">
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                              <div class="bar"></div>
+                    </div>
+
+                    <div class="burger-menu" id="burgerMenu">
+                              <nav>
+                                        <a href="landing.html">HOME</a>
+                                       
+                                        <a href="brand.html">BRAND</a>
+                                        <a href="fame.html">FAME</a>
+                                        <a href="bag.html">BAG 00</a>
+                              </nav>
+                    </div>
+                    <div class="uvod">
+                              <h1>COLLECTIONS</h1>
+                    </div>
+          </section>
+
+
+
+          <main class="collections-layout">
+                    <section class="filter-panel">
+                              <div class="filter-header" id="filterToggle">
+                                        <span id="filterToggleText">FILTER +</span>
+                              </div>
+
+                              <div class="filter-grid" id="filterGrid">
+                                        <!-- COLOUR -->
+                                        <div class="filter-column" data-filter="color">
+                                          <h4>COLOUR</h4>
+                                          <label><input type="checkbox" value="white"> White</label>
+                                          <label><input type="checkbox" value="black"> Black</label>
+                                          <label><input type="checkbox" value="blue"> Blue</label>
+                                          <label><input type="checkbox" value="brown"> Brown</label>
+                                          <label><input type="checkbox" value="grey"> Grey</label>
+                                          <label><input type="checkbox" value="orange"> Orange</label>
+                                        </div>
+                                      
+                                        <!-- CATEGORY -->
+                                        <div class="filter-column" data-filter="type">
+                                          <h4>CATEGORY</h4>
+                                          <label><input type="checkbox" value="bunda"> JACKETS</label>
+                                          <label><input type="checkbox" value="kalhoty"> JEANS</label>
+                                          <label><input type="checkbox" value="čepice">HATS</label>
+                                          <label><input type="checkbox" value="mikina"> HOODIES</label>
+                                          <label><input type="checkbox" value="triko"> T-SHIRTS</label>
+                                          <label><input type="checkbox" value="boxovací rukavice">BOXING GLOVES</label>
+                                          <label><input type="checkbox" value="doplněk"> ACCESSORIES</label>
+                                        </div>
+                                      
+                                        <!-- COLLECTION -->
+                                        <div class="filter-column" data-filter="collection">
+                                          <h4>COLLECTION</h4>
+                                          <label><input type="checkbox" value="winter"> Winter</label>
+                                          <label><input type="checkbox" value="summer"> Summer</label>
+                                        </div>
+                                      
+                                        <!-- SIZE -->
+                                        <div class="filter-column" data-filter="size">
+                                          <h4>SIZE</h4>
+                                          <label><input type="checkbox" value="S"> S</label>
+                                          <label><input type="checkbox" value="M"> M</label>
+                                          <label><input type="checkbox" value="L"> L</label>
+                                          <label><input type="checkbox" value="XL"> XL</label>
+                                        </div>
+                                      </div>
+                    </section>
+
+
+
+
+                    <section class="products" id="productList">
+                              <div class="product-card" data-name="Produkt 1" data-type="mikina" data-color="grey" data-size="M" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="mikina-kolekce.png" alt="Produkt 1">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 1</h3>
+                                          <p class="price">$114.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: grey;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 2" data-type="čepice" data-color="grey,black" data-size="L" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="cepice-kolekce.png" alt="Produkt 2">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 2</h3>
+                                          <p class="price">$122.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: grey;"></span>
+                                            <span style="background-color: black;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 3" data-type="triko" data-color="brown,grey,white" data-size="XL" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="triko-kolekce.png" alt="Produkt 3">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 3</h3>
+                                          <p class="price">$89.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: brown;"></span>
+                                            <span style="background-color: grey;"></span>
+                                            <span style="background-color: white;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 4" data-type="kalhoty" data-color="white" data-size="L" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="kalhoty-kolekce.png" alt="Produkt 4">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 4</h3>
+                                          <p class="price">$153.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: white;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 5" data-type="doplněk" data-color="white,brown,black" data-size="S,XL" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="doplnek-kolekce.png" alt="Produkt 5">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 5</h3>
+                                          <p class="price">$135.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: white;"></span>
+                                            <span style="background-color: brown;"></span>
+                                            <span style="background-color: black;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      <div class="product-card" data-name="Produkt 6" data-type="triko" data-color="blue" data-size="L,XL,M" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="triko-kolekce.png" alt="Produkt 6">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 6</h3>
+                                          <p class="price">$95.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: blue;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 7" data-type="boxovací rukavice" data-color="blue" data-size="S" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="rukavice-kolekce.png" alt="Produkt 7">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 7</h3>
+                                          <p class="price">$118.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: blue;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 8" data-type="triko" data-color="orange" data-size="XL" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="triko-kolekce.png" alt="Produkt 8">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 8</h3>
+                                          <p class="price">$121.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: orange;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 9" data-type="bunda" data-color="orange" data-size="XL,S,M" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="bunda-kolekce.png" alt="Produkt 9">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 9</h3>
+                                          <p class="price">$139.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: orange;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 10" data-type="doplněk" data-color="orange,brown,white" data-size="M,L" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="doplnek-kolekce.png" alt="Produkt 10">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 10</h3>
+                                          <p class="price">$125.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: orange;"></span>
+                                            <span style="background-color: brown;"></span>
+                                            <span style="background-color: white;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 11" data-type="mikina" data-color="brown" data-size="L,XL" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="mikina-kolekce.png" alt="Produkt 11">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 11</h3>
+                                          <p class="price">$119.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: brown;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 12" data-type="boxovací rukavice" data-color="white,orange" data-size="M,L" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="rukavice-kolekce.png" alt="Produkt 12">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 12</h3>
+                                          <p class="price">$102.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: white;"></span>
+                                            <span style="background-color: orange;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 13" data-type="čepice" data-color="grey,blue" data-size="M" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="cepice-kolekce.png" alt="Produkt 13">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 13</h3>
+                                          <p class="price">$129.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: grey;"></span>
+                                            <span style="background-color: blue;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 14" data-type="kalhoty" data-color="orange,grey" data-size="S,M,L" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="kalhoty-kolekce.png" alt="Produkt 14">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 14</h3>
+                                          <p class="price">$123.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: orange;"></span>
+                                            <span style="background-color: grey;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 15" data-type="bunda" data-color="white,brown,blue" data-size="S" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="bunda-kolekce.png" alt="Produkt 15">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 15</h3>
+                                          <p class="price">$144.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: white;"></span>
+                                            <span style="background-color: brown;"></span>
+                                            <span style="background-color: blue;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 16" data-type="čepice" data-color="grey,black" data-size="M,L" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="cepice-kolekce.png" alt="Produkt 16">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 16</h3>
+                                          <p class="price">$138.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: grey;"></span>
+                                            <span style="background-color: black;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 17" data-type="doplněk" data-color="grey,black,white" data-size="S,L" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="doplnek-kolekce.png" alt="Produkt 17">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 17</h3>
+                                          <p class="price">$104.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: grey;"></span>
+                                            <span style="background-color: black;"></span>
+                                            <span style="background-color: white;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 18" data-type="mikina" data-color="grey,orange" data-size="S,XL" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="mikina-kolekce.png" alt="Produkt 18">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 18</h3>
+                                          <p class="price">$85.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: grey;"></span>
+                                            <span style="background-color: orange;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 19" data-type="boxovací rukavice" data-color="black,orange" data-size="L" data-collection="winter">
+                                        <div class="product-img">
+                                          <img src="rukavice-kolekce.png" alt="Produkt 19">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 19</h3>
+                                          <p class="price">$99.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: black;"></span>
+                                            <span style="background-color: orange;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="product-card" data-name="Produkt 20" data-type="kalhoty" data-color="orange" data-size="S,M" data-collection="summer">
+                                        <div class="product-img">
+                                          <img src="kalhoty-kolekce.png" alt="Produkt 20">
+                                        </div>
+                                        <div class="product-text">
+                                          <h3>PRODUCT 20</h3>
+                                          <p class="price">$150.99</p>
+                                          <div class="color-dots">
+                                            <span style="background-color: orange;"></span>
+                                          </div>
+                                          <a href="product.html" class="shop-now">SHOP NOW</a>
+                                        </div>
+                                      </div>
+                                      
+                    </section>
+          </main>
+          <section class="paticka">
+                    <div class="paticka-column">
+                              <h2>CONTACT</h2>
+
+                              <div class="toggle-wrapper">
+                                        <a href="#" class="toggle-link">
+                                                  <img src="logo-uvod.png" class="toggle-icon" alt=""> Client Service
+                                        </a>
+                                        <div class="toggle-detail">
+                                                  <p>Email: support@steelplate.com</p>
+                                                  <p>Phone: +420 123 456 789</p>
+                                        </div>
+                              </div>
+
+                              <div class="toggle-wrapper">
+                                        <a href="#" class="toggle-link">
+                                                  <img src="logo-uvod.png" class="toggle-icon" alt=""> Corporate
+                                        </a>
+                                        <div class="toggle-detail">
+                                                  <p>Corporate ID: 12345678</p>
+                                                  <p>Registered in Prague</p>
+                                        </div>
+                              </div>
+
+                              <div class="toggle-wrapper">
+                                        <a href="#" class="toggle-link">
+                                                  <img src="logo-uvod.png" class="toggle-icon" alt=""> Follow Us
+                                        </a>
+                                        <div class="toggle-detail">
+                                                  <p><a href="#">Instagram</a> / <a href="#">TikTok</a></p>
+                                        </div>
+                              </div>
+
+
+                    </div>
+                    <div class="paticka-column">
+                              <h2>NEWSLETTER</h2>
+                              <p>Contact us:</p>
+                              <div class="email-subscribe">
+                                        <input type="email" placeholder="Enter your e-mail" />
+                                        <button type="submit">CONTINUE</button>
+                              </div>
+
+                              <div class="toggle-wrapper">
+                                        <a href="#" class="toggle-link">
+                                                  <img src="logo-uvod.png" class="toggle-icon" alt=""> Legal
+                                        </a>
+                                        <div class="toggle-detail">
+                                                  <p>Terms of Use, GDPR, Cookies info.</p>
+                                        </div>
+                              </div>
+                    </div>
+          </section>
+
+
+          <footer>
+            <img src="logo.png" alt="">Copyright © 2025 IRON YOUTH. All rights reserved.
+          </footer>
+</body>
+<script> document.addEventListener('DOMContentLoaded', () => {
+          const input = document.getElementById('searchInput');
+          const products = document.querySelectorAll('.product-card');
+          const filters = document.querySelectorAll('.filter-column');
+          const filterPanel = document.querySelector('.filter-panel');
+          const toggleText = document.getElementById('filterToggleText');
+        
+          // Toggle filter panel
+          document.getElementById('filterToggle').addEventListener('click', () => {
+            filterPanel.classList.toggle('closed');
+            toggleText.textContent = filterPanel.classList.contains('closed') ? 'FILTER +' : 'FILTER −';
+          });
+        
+          // Hlavní funkce pro filtrování produktů
+          function filterProducts() {
+            const searchValue = input?.value.toLowerCase() || '';
+            const activeFilters = {};
+        
+            filters.forEach(group => {
+              const type = group.dataset.filter;
+              const checked = [...group.querySelectorAll('input:checked')].map(i => i.value.toLowerCase());
+              if (checked.length) activeFilters[type] = checked;
+            });
+        
+            products.forEach(product => {
+              const name = product.dataset.name?.toLowerCase() || '';
+              const type = product.dataset.type?.toLowerCase() || '';
+              const color = product.dataset.color?.toLowerCase() || '';
+              const size = product.dataset.size?.toLowerCase() || '';
+              const collection = product.dataset.collection?.toLowerCase() || '';
+        
+              const matchesSearch = name.includes(searchValue);
+        
+              let matchesFilters = true;
+              for (const [key, values] of Object.entries(activeFilters)) {
+                const data = product.dataset[key]?.toLowerCase() || '';
+                const hasMatch = values.some(v => data.includes(v));
+                if (!hasMatch) matchesFilters = false;
+              }
+        
+              product.style.display = matchesSearch && matchesFilters ? 'block' : 'none';
+            });
+          }
+        
+          // Eventy pro filtrování
+          if (input) input.addEventListener('input', filterProducts);
+          document.querySelectorAll('.filter-column input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+              checkbox.parentElement.classList.toggle('active', checkbox.checked);
+              filterProducts();
+            });
+          });
+        });
+
+          const burgerIcon = document.getElementById('burgerIcon');
+          const burgerMenu = document.getElementById('burgerMenu');
+
+          burgerIcon.addEventListener('click', () => {
+                    burgerMenu.classList.toggle('show');
+          });
+          document.querySelectorAll('.toggle-link').forEach(link => {
+                    link.addEventListener('click', e => {
+                              e.preventDefault();
+                              const wrapper = link.closest('.toggle-wrapper');
+                              const icon = link.querySelector('.toggle-icon');
+
+                              wrapper.classList.toggle('open');
+
+                              if (wrapper.classList.contains('open')) {
+                                        icon.src = "logo-uvod-2.png"; // nahraď cestou k „mínus“ ikoně
+                              } else {
+                                        icon.src = "logo-uvod.png"; // zpět na „plus“
+                              }
+                    });
+          });
+
+</script>
+
+</html>

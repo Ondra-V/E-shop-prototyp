@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontální Scroll – Čistá verze</title>
+  <style>
+    html, body { margin: 0; padding: 0; }
+    .fill { height: 100vh; display: flex; align-items: center; justify-content: center; font-size: 2rem; background: #f0f0f0; }
+    .horizontal-scroll-section {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: #222;
+    }
+    .horizontal-scroll-content {
+      display: flex;
+      height: 100vh;
+      transition: transform 0.2s cubic-bezier(.42,0,.58,1);
+    }
+    .item {
+      flex: 0 0 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: #fff;
+      background: #456173;
+      border-right: 2px solid #fff2;
+    }
+  </style>
+</head>
+<body>
+  <div class="fill">Úvodní obsah</div>
+
+  <section id="horizontal-section" class="horizontal-scroll-section">
+    <div class="horizontal-scroll-content" id="horiz-content">
+      <div class="item" style="background:#e94560;">Produkt 1</div>
+      <div class="item" style="background:#0f3460;">Produkt 2</div>
+      <div class="item" style="background:#533483;">Produkt 3</div>
+      <div class="item" style="background:#393e46;">Produkt 4</div>
+    </div>
+  </section>
+
+  <div id="spacer"></div>
+
+  <div class="fill">Závěrečný obsah</div>
+
+  <script>
+    // Funkce nastaví výšku spaceru tak, aby stránka měla prostor pro horizontální scroll.
+    function updateSpacer() {
+      const content = document.getElementById('horiz-content');
+      const spacer = document.getElementById('spacer');
+      const windowHeight = window.innerHeight;
+      // "délka dráhy", po které horizontálně scrollujeme = (šířka obsahu sekce - šířka okna)
+      const scrollLength = content.scrollWidth - window.innerWidth;
+      spacer.style.height = (scrollLength + windowHeight) + "px";
+    }
+    window.addEventListener('resize', updateSpacer);
+    window.addEventListener('DOMContentLoaded', updateSpacer);
+
+    // Horizontální pohyb sekce při scrollování stránky
+    window.addEventListener('scroll', () => {
+      const section = document.getElementById('horizontal-section');
+      const content = document.getElementById('horiz-content');
+      const sectionTop = section.offsetTop;
+      const scrollLength = content.scrollWidth - window.innerWidth;
+      const sectionHeight = content.scrollWidth;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight - window.innerHeight) {
+        // Sekce je ve viewportu → přilepíme navrch a scrollujeme horizontálně
+        section.style.position = 'fixed';
+        section.style.top = '0';
+        section.style.left = '0';
+        section.style.width = '100vw';
+        const horizontalScroll = window.scrollY - sectionTop;
+        content.style.transform = `translateX(-${horizontalScroll}px)`;
+      } else if (window.scrollY >= sectionTop + sectionHeight - window.innerHeight) {
+        // Za sekcí → sekce přestane být fixovaná a už se neposouvá
+        section.style.position = 'absolute';
+        section.style.top = `${sectionHeight - window.innerHeight}px`;
+        section.style.left = '0';
+        section.style.width = '100vw';
+        content.style.transform = `translateX(-${scrollLength}px)`;
+      } else {
+        // Před sekcí → normální režim, žádný horizontální posun
+        section.style.position = 'relative';
+        section.style.top = 'unset';
+        section.style.left = 'unset';
+        section.style.width = '100vw';
+        content.style.transform = `translateX(0)`;
+      }
+    });
+  </script>
+</body>
+</html>

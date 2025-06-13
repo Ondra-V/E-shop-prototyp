@@ -1,0 +1,250 @@
+* {background-color: black;}
+          /* BRAND LANDING background */
+.landing-brand {
+  background-image: url("brand-landing.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.uvod-brand h1 {
+  font-size: 10rem;
+  font-family: 'Bespoke Stencil', sans-serif;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.brand-page {
+  background-color: black;
+  color: white;
+  font-family: 'Clash Display', sans-serif;
+  padding: 4rem 2rem;
+}
+
+.brand-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.brand-hero h1 {
+  font-size: 5rem;
+  font-family: 'Bespoke Stencil', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.brand-hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.brand-section {
+  max-width: 800px;
+  margin: 4rem auto;
+}
+
+.brand-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #eee;
+}
+
+.brand-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #bbb;
+}
+
+.brand-timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.brand-timeline li {
+  padding: 0.5rem 0;
+  border-left: 2px solid white;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-hero h1 {
+    font-size: 3rem;
+  }
+
+  .brand-hero p {
+    font-size: 1rem;
+  }
+
+  .brand-section {
+    padding: 0 1rem;
+  }
+
+  .brand-section h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.brand-visual-block {
+  background: black;
+  color: white;
+  padding: 2rem 0;
+  font-family: 'Clash Display', sans-serif;
+}
+
+.visual-row {
+  display: flex;
+  align-items: center;
+  
+  margin-bottom: 4rem;
+}
+
+.visual-row.reverse {
+  flex-direction: row-reverse;
+}
+.visual-row.visual-row.reverse img ,
+.visual-row img {
+flex: 1 1;
+  width: 560px;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.visual-text {
+  flex: 1 1 50%;
+  padding: 2rem;
+}
+
+.visual-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+}
+
+.visual-text p,
+.visual-text ul {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.visual-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.visual-text ul li {
+  margin-bottom: 0.75rem;
+  border-left: 2px solid white;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .visual-row,.visual-row.reverse {
+    flex-direction: column;
+  }
+
+  .visual-text {
+          padding-top: 3rem;
+          
+    
+  }
+
+  .visual-text h2,.research-item h2 {
+    font-size: 2.3rem;
+  }
+
+  .visual-text p,
+  .visual-text ul {
+    font-size: 0.9rem;
+  }
+}
+/* Burger menu – již definováno dříve, takže použít z landing */
+
+
+
+.research-section {
+  background-color: black;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.research-section h2 {
+          font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+}
+
+.research-showcase {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.research-item {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background-color: #000000;
+  padding: 2rem 1rem;
+  
+}
+
+.research-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.research-item h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  color: white;
+}
+
+.research-item p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .research-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .research-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .research-item p {
+    font-size: 1rem;
+  }
+
+  
+}
+.row a:hover
+{
+ background-color: #ffffff0e;
+ color: #d1d1d1;
+ text-decoration: none;
+
+ padding: 10px 20px;
+ border-radius: 5px;
+ transition: background-color 0.3s ease;
+}

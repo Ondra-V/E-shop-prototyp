@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAG 00</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bag.css">
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=clash-display@500&f[]=bebas-neue@400&f[]=supreme@400&f[]=bespoke-stencil@700&display=swap"
+    rel="stylesheet">
+  
+
+
+
+</head>
+
+<body>
+  <section class="landing">
+    <section class="row"><a href="landing.html">HOME</a>
+      <div class="dropdown">
+        <a href="collections.html">COLLECTIONS</a>
+        <div class="dropdown-content">
+          <a href="collections.html#bundy">JACKETS</a>
+          <a href="collections.html#mikiny">HOODIES</a>
+          <a href="collections.html#trika">T-SHIRTS</a>
+          <a href="collections.html#kalhoty">JEANS</a>
+          <a href="collections.html#cepice">HATS</a>
+          <a href="collections.html#doplnky">ACCESSORIES</a>
+        </div>
+      </div>
+
+      <img src="iron_youth_unite_transparent_500x500.png" alt="">
+      <a href="brand.html">BRAND</a>
+      <a href="fame.html">FAME</a>
+    </section>
+    <div class="burger-icon" id="burgerIcon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="burger-menu" id="burgerMenu">
+      <nav><a href="landing.html">HOME</a>
+        <a href="collections.html">COLLECTIONS</a>
+        <a href="brand.html">BRAND</a>
+        <a href="fame.html">FAME</a>
+
+      </nav>
+    </div>
+    <div class="uvod">
+      <h1>BAG </h1>
+    </div>
+  </section>
+  <h1 style="text-align:center; padding-top: 4rem;background-color: #111;">YOUR SHOPPING BAG</h1>
+  <main>
+
+    <div class="checkout-container">
+      <div class="cart-left">
+        <div class="cart-item">
+          <img src="bunda-2.png" alt="Product">
+          <div class="cart-info">
+            <h3>MEMBRANA 3L TC</h3>
+            <p>Breathable and water-resistant bomber jacket</p>
+            <p>Size: M</p>
+            <p>Color: REAL BLACK</p>
+            <div class="qty-controls">
+              <button onclick="updateQuantity(-1)">−</button>
+              <span id="quantity">1</span>
+              <button onclick="updateQuantity(1)">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="bunda-2.png" alt="Product">
+          <div class="cart-info">
+            <h3>MEMBRANA 3L TC</h3>
+            <p>Breathable and water-resistant bomber jacket</p>
+            <p>Size: M</p>
+            <p>Color: REAL BLACK</p>
+            <div class="qty-controls">
+              <button onclick="updateQuantity2(-1)">−</button>
+              <span id="quantity2">1</span>
+              <button onclick="updateQuantity2(1)">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="bunda-2.png" alt="Product">
+          <div class="cart-info">
+            <h3>MEMBRANA 3L TC</h3>
+            <p>Breathable and water-resistant bomber jacket</p>
+            <p>Size: M</p>
+            <p>Color: REAL BLACK</p>
+            <div class="qty-controls">
+              <button onclick="updateQuantity3(-1)">−</button>
+              <span id="quantity3">1</span>
+              <button onclick="updateQuantity3(1)">+</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="cart-right">
+        <h3>ORDER SUMMARY</h3>
+        <div class="summary-line">
+          <span>Subtotal</span><span id="subtotal">KČ 17.600,00</span>
+        </div>
+        <div class="summary-line">
+          <span>Delivery</span><span>KČ 300,00</span>
+        </div>
+        <div class="summary-line">
+          <span>Packaging</span><span>Free</span>
+        </div>
+
+        <div class="promo-section">
+          <input type="text" id="promoCode" placeholder="Promotional code">
+          <button onclick="applyPromoCode()">APPLY</button>
+        </div>
+
+        <div class="summary-line" style="font-weight:bold;">
+          <span>Total</span><span id="totalPrice">KČ 17.900,00</span>
+        </div>
+
+        <button class="checkout-btn">PROCEED TO CHECKOUT</button>
+        <button class="express-btn">EXPRESS CHECKOUT</button>
+      </div>
+    </div>
+
+    <form class="checkout-form" onsubmit="return handlePayment(event)">
+      <h3 style="text-align:center;">Payment Details</h3>
+      <label for="name">Cardholder Name</label>
+      <input type="text" id="name" required>
+
+      <label for="card">Card Number</label>
+      <input type="text" id="card" required pattern="\d{16}" title="Enter 16-digit card number">
+
+      <label for="exp">Expiration Date</label>
+      <input type="text" id="exp" placeholder="MM/YY" required pattern="\d{2}/\d{2}">
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" required pattern="\d{3}" title="Enter 3-digit CVV">
+
+      <button type="submit">PAY NOW</button>
+     
+    </form>
+  </main>
+  <section class="paticka">
+    <div class="paticka-column">
+      <h2>CONTACT</h2>
+
+      <div class="toggle-wrapper">
+        <a href="#" class="toggle-link">
+          <img src="logo-uvod.png" class="toggle-icon" alt=""> Client Service
+        </a>
+        <div class="toggle-detail">
+          <p>Email: support@steelplate.com</p>
+          <p>Phone: +420 123 456 789</p>
+        </div>
+      </div>
+
+      <div class="toggle-wrapper">
+        <a href="#" class="toggle-link">
+          <img src="logo-uvod.png" class="toggle-icon" alt=""> Corporate
+        </a>
+        <div class="toggle-detail">
+          <p>Corporate ID: 12345678</p>
+          <p>Registered in Prague</p>
+        </div>
+      </div>
+
+      <div class="toggle-wrapper">
+        <a href="#" class="toggle-link">
+          <img src="logo-uvod.png" class="toggle-icon" alt=""> Follow Us
+        </a>
+        <div class="toggle-detail">
+          <p><a href="#">Instagram</a> / <a href="#">TikTok</a></p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="paticka-column">
+      <h2>NEWSLETTER</h2>
+      <p>Contact us:</p>
+      <div class="email-subscribe">
+        <input type="email" placeholder="Enter your e-mail" />
+        <button type="submit">CONTINUE</button>
+      </div>
+
+      <div class="toggle-wrapper">
+        <a href="#" class="toggle-link">
+          <img src="logo-uvod.png" class="toggle-icon" alt=""> Legal
+        </a>
+        <div class="toggle-detail">
+          <p>Terms of Use, GDPR, Cookies info.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <img src="logo.png" alt="">Copyright © 2025 IRON YOUTH. All rights reserved.
+  </footer>
+  <script>
+   
+
+    let quantity = 1;
+    let quantity2 = 1;
+    let quantity3 = 1;
+    const unitPrice = 17600;
+
+    function updateQuantity(change) {
+      quantity = Math.max(1, quantity + change);
+      document.getElementById('quantity').textContent = quantity;
+      updateTotals();
+    }
+    function updateQuantity2(change) {
+      quantity2 = Math.max(1, quantity2 + change);
+      document.getElementById('quantity2').textContent = quantity2;
+      updateTotals();
+    }
+    function updateQuantity3(change) {
+      quantity3 = Math.max(1, quantity3 + change);
+      document.getElementById('quantity3').textContent = quantity3;
+      updateTotals();
+    }
+
+    function updateTotals() {
+      const delivery = 300;
+        let subtotal = (unitPrice * quantity) + (unitPrice * quantity2) + (unitPrice * quantity3);
+      let total = subtotal + delivery;
+
+      document.getElementById('subtotal').textContent = `KČ ${subtotal.toLocaleString('cs-CZ')},00`;
+      document.getElementById('totalPrice').textContent = `KČ ${total.toLocaleString('cs-CZ')},00`;
+    }
+
+    function applyPromoCode() {
+      const input = document.getElementById('promoCode');
+      if (input.value.trim().toUpperCase() === 'SIGMAMISA10') {
+        let discounted = (unitPrice * quantity) * 0.9 + 300;
+        document.getElementById('totalPrice').textContent = `KČ ${discounted.toLocaleString('cs-CZ')},00`;
+        alert('Promo code applied: 10% off');
+      } else {
+        alert('Invalid promo code');
+        updateTotals();
+      }
+    }
+
+    function handlePayment(e) {
+      e.preventDefault();
+      const confirmation = document.getElementById('confirmation');
+      confirmation.style.display = 'block';
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      return false;
+    }
+
+    updateTotals();
+  </script>
+</body>
+
+</html>

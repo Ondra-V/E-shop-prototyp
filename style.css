@@ -1,0 +1,1058 @@
+* {
+
+  background-color: #ffffff;
+  color: #DDE6ED;
+  margin: 0;
+  padding: 0;
+}
+
+.burger-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  background-color: #00000000;
+}
+
+.burger-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+
+}
+
+/* Fullscreen menu */
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 1000;
+
+  justify-content: center;
+}
+
+
+
+.burger-menu nav {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.burger-menu nav a {
+  background-color: #000000;
+  color: white;
+  font-size: 5rem;
+  margin: 2rem 0;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.burger-menu.show {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Show burger icon on small screens */
+@media screen and (max-width: 798px) {
+
+  .row a {
+    display: none;
+    background-color: #ffffff00;
+
+  }
+
+  .burger-icon {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+  .uvod {
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .uvod h1 {
+    font-size: 38px;
+  }
+
+  .row,
+  .row-brand {
+
+    gap: 10px;
+  }
+
+  .row img,
+  .row-brand img {
+    width: 8rem;
+    height: auto;
+  }
+
+
+  .menicko {
+
+
+    flex-direction: column;
+  }
+
+  .nabidka1,
+  .nabidka2,
+  .nabidka3 {
+    width: 100%;
+    height: 300px;
+    font-size: 48px;
+  }
+
+  .brand-history-text {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+
+
+  .card,
+  .cardofproduct1,
+  .cardofproduct2,
+  .cardofproduct3,
+  .cardofproduct4,
+  .cardofproduct5,
+  .cardofproduct6,
+  .cardofproduct7 {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .overlay-text {
+    font-size: 40px;
+    padding-top: 10rem;
+    height: auto;
+  }
+
+
+  .paticka {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .email-subscribe {
+    flex-wrap: nowrap;
+  }
+
+  .email-subscribe button {
+    width: auto;
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff00;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3f3f3f98;
+  width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.row,
+footer,
+.row-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff00;
+  padding: 30px 0 30px 30px;
+  margin: 0 auto;
+  font-family: 'Clash Display', sans-serif;
+  height: 40px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 3rem);
+  backdrop-filter: blur(7px);
+
+
+}
+
+.row a,
+.row-brand a {
+  background-color: #ffffff00;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+  font-family: 'Clash Display', sans-serif;
+}
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  
+
+}
+
+.onas-zacatek-reverse img {
+  width: 55rem;
+  height: 55rem;
+  object-fit: cover;
+  background-color: #ffffff00;
+  border-radius: 5%;
+
+  margin-left: 4rem;
+}
+
+.onas-zacatek img {
+  width: 55rem;
+  height: 55rem;
+  object-fit: cover;
+  background-color: #ffffff00;
+  border-radius: 5%;
+  margin:0 5.2rem 0 5.2rem; ;
+}
+
+.onas-zacatek {
+  
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 63rem;
+  align-items: center;
+  align-items: center;
+  padding: 0 10rem 0 0;
+  
+  
+}
+
+.onas-zacatek-reverse {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  height: 63rem;
+  align-items: center;
+  padding: 0 0 0 20rem;
+  
+ 
+}
+
+.onas-zacatek .text {
+  background-color: rgba(0, 0, 0, 0);
+  width: 40rem;
+  font-size: 20px;
+  color: #000000;
+}
+
+.onas-zacatek .text h2 {
+  font-size: 4rem;
+  font-family: 'Bespoke Stencil', sans-serif;
+  color: #000000;
+  margin-bottom: 1rem;
+  background-color: #00000000;
+}
+
+.onas-zacatek-reverse .text {
+  background-color: rgba(0, 0, 0, 0);
+  width: 40rem;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.onas-zacatek-reverse .text h2 {
+  font-size: 4rem;
+  font-family: 'Bespoke Stencil', sans-serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  background-color: #00000000;
+}
+
+.row a:hover {
+  background-color: #ffffff0e;
+  color: #272727;
+  text-decoration: none;
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.landing-brand {
+  background-image: url("brand-landing.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000067;
+}
+
+.landing {
+  background-image: url("2297e03f-08e2-4c4b-a426-a2690451119a.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000067;
+}
+
+.uvod {
+  display: flex;
+
+align-items: center;
+  justify-content: center;
+
+  max-width: 1804px;
+  width: 100%;
+  background-color: #ffffff00;
+}
+
+.uvod h1 {
+  font-size: 7.8rem;
+  font-family: 'Bespoke Stencil', sans-serif;
+  color: rgb(252, 250, 255);
+  margin: 38vh 0 0 0 ;
+
+  
+
+  background-color: #ffffff00;
+
+
+
+}
+
+.uvod-brand {
+  background-color: #ffffff00;
+
+}
+
+.uvod-brand h1 {
+  background-color: #ffffff00;
+  justify-content: center;
+  text-align: center;
+  margin: 18rem;
+  align-self: center;
+  font-size: 200px;
+  font-family: 'Bespoke Stencil', sans-serif;
+
+}
+
+
+
+.row img,
+.row-brand img {
+  background-color: #c7a2a200;
+  height: 10rem;
+  width: 20rem;
+
+  object-fit: cover;
+
+
+  z-index: 1;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+
+
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: 'Clash Display', sans-serif;
+  background-color: #000000b0;
+  z-index: 1;
+  text-align: center;
+  padding-top: 20rem;
+  width: 101%;
+  height: 400px;
+}
+
+.carousel-container2 {
+  overflow: hidden;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+
+
+}
+
+.carousel-track2 {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+  background-color: #000000;
+}
+
+.cardofproduct1 a,
+.cardofproduct2 a,
+.cardofproduct3 a,
+.cardofproduct4 a,
+.cardofproduct5 a,
+.cardofproduct6 a,
+.cardofproduct7 a {
+  background-color: #00000000;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 35%;
+  margin-bottom: 10%;
+  font-family: 'Supreme', sans-serif;
+}
+
+
+.cardofproduct1 {
+  background-image: url("mikiny-product.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 40rem;
+  background-color: #00000067;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  font-family: 'Supreme', sans-serif;
+  padding-bottom: 3px;
+
+}
+
+.cardofproduct2 {
+  background-image: url("jeans.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 40rem;
+  background-color: #00000067;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  font-family: 'Supreme', sans-serif;
+  padding-bottom: 3px;
+}
+
+.cardofproduct3 {
+  background-image: url("cepice.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 40rem;
+  background-color: #00000067;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  font-family: 'Supreme', sans-serif;
+  padding-bottom: 3px;
+}
+
+.cardofproduct4 {
+  background-image: url("Trika.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 40rem;
+  background-color: #00000067;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  font-family: 'Supreme', sans-serif;
+  padding-bottom: 3px;
+}
+
+.cardofproduct5 {
+  background-image: url("bunda.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 40rem;
+  background-color: #00000067;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  font-family: 'Supreme', sans-serif;
+  padding-bottom: 3px;
+}
+
+.cardofproduct6 {
+  background-image: url("Aceess.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 40rem;
+  background-color: #00000067;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  font-family: 'Supreme', sans-serif;
+  padding-bottom: 3px;
+}
+
+.cardofproduct7 {
+  background-image: url("rukavice.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 40rem;
+  background-color: #00000067;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  font-family: 'Supreme', sans-serif;
+  padding-bottom: 3px;
+}
+
+
+
+.cardofproduct1 h3,
+.cardofproduct2 h3,
+.cardofproduct3 h3,
+.cardofproduct4 h3,
+.cardofproduct5 h3,
+.cardofproduct6 h3,
+.cardofproduct7 h3 {
+  color: #ffffff;
+  font-family: 'Supreme', sans-serif;
+  font-size: 40px;
+  padding: 0.4rem;
+  justify-self: start;
+  background-color: #00000000;
+
+  align-self: center;
+
+}
+
+.cardofproduct {
+  width: 17rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 10rem;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 31s linear infinite;
+  background-color: #ffffff;
+}
+
+.card {
+  width: 17rem;
+
+  margin: 0 5px;
+  background-color: #ffffff;
+
+
+  overflow: hidden;
+
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: #ffffff;
+}
+
+.card img {
+  width: 17rem;
+  object-fit: contain;
+  height: 277px;
+  background-color: #ffffff;
+
+}
+
+.card .info {
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+
+  transition: all 0.4s ease;
+}
+
+.card h3,
+.card p {
+  color: #000000;
+  font-family: 'Clash Display', sans-serif;
+
+
+}
+
+.card:hover .info {
+  opacity: 1;
+  max-height: 100px;
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+footer {
+  background-color: #000000;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+
+  width: auto;
+  height: auto;
+
+  justify-content: space-between;
+  padding: 0 5rem 0 0;
+}
+
+footer img {
+  object-fit: cover;
+  height: 8rem;
+  width: 15rem;
+
+
+  background-color: #00000000;
+
+
+}
+
+.paticka {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+  padding: 8rem 4rem 4rem 4rem;
+
+  gap: 2rem;
+  color: white;
+  font-family: 'Clash Display', sans-serif;
+}
+
+.toggle-wrapper {
+  margin-bottom: 1rem;
+}
+
+.toggle-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Clash Display', sans-serif;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.toggle-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 0.9rem;
+  color: #ccc;
+  padding-left: 2rem;
+  background-color: black;
+}
+
+.toggle-wrapper.open .toggle-detail {
+  max-height: 200px;
+}
+
+.paticka-column {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: black;
+}
+
+.paticka-column h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+.paticka-column a,
+.paticka-column p {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  background-color: black;
+}
+
+.paticka-column img {
+  height: 1.2rem;
+  width: 1.2rem;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.email-subscribe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background-color: black;
+}
+
+.email-subscribe input {
+
+  flex: 1;
+  padding: 8px;
+  background: black;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 14px;
+}
+
+.email-subscribe button {
+  padding: 8px 16px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: auto;
+  white-space: nowrap;
+  border: 1px solid white;
+}
+
+.email-subscribe button:hover {
+  background: rgb(197, 197, 197);
+  color: black;
+}
+
+
+
+
+
+.technik button:hover {
+  background: rgb(197, 197, 197);
+  color: black;
+}
+
+.technik button {
+  margin-top: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #333333;
+  padding: 8px 16px;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  height: auto;
+  width: 6rem;
+}
+
+.technik {
+
+  background-image: url("technik.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000067;
+  display: flex;
+
+
+}
+
+.technik p {
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #00000000;
+  justify-self: start;
+  align-self: end;
+  margin-bottom: 4rem;
+  margin-left: 3.5rem;
+  padding: 0.4rem;
+  width: max-content;
+  font-weight: normal;
+
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.menicko {
+  display: flex;
+  width: 100%;
+
+}
+
+.nabidka a:hover {
+  background-color: rgba(0, 0, 0, 0.219);
+  /* ztmavení */
+  transition: 0.6s ease;
+  color: #ffffff;
+}
+
+.nabidka {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.nabidka a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 88px;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.603);
+  /* ztmavení */
+}
+
+
+.nadpis {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 4rem;
+  ;
+  margin-top: 3rem;
+  font-size: 20px;
+  font-family: 'Clash Display', sans-serif;
+  background-color: #00000000;
+  justify-content: space-between;
+  ;
+}
+
+.nadpis a,
+.nadpis p {
+  color: black;
+}
+
+.nadpis a:hover {
+  color: #363636;
+}
+
+.nadpis a {
+
+  font-size: 18px;
+}
+
+.brand-history {
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-history-text {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Clash Display', sans-serif;
+  background-color: #000000;
+  text-align: center;
+  margin-top: -10rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-bottom: 3rem;
+}
+
+.brand-history-text h2,
+.brand-history-text p {
+  background-color: #000000;
+}
+
+/* Product Card Styles */
+.product-card {
+  width: 300px;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Clash Display', sans-serif;
+
+
+  margin: 2rem 5rem 2rem 5rem;
+
+}
+
+
+
+.product-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.product-img:hover .hover-info {
+  opacity: 1;
+}
+
+.product-text {
+  padding: 1.2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.product-text h3 {
+  font-size: 1.14rem;
+  color: #000000;
+  margin-bottom: 0.4rem;
+  background-color: #ffffff;
+}
+
+.price {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.6rem;
+  background-color: #ffffff;
+}
+
+.color-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 0.6rem;
+  background-color: #ffffff;
+}
+
+.color-dots span {
+  width: 48px;
+  height: 16px;
+
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.shop-now {
+  display: block;
+  border-bottom: #000000 solid 1px;
+  padding: 0.5rem 0;
+  color: #000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #ffffff;
+}
